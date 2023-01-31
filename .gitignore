@@ -13,3 +13,5 @@ obj/
 /.vs/slnx.sqlite
 /.vs/VSWorkspaceState.json
 /.vs/AzureTableBackupRestore/v17
+.vs/AzureTableBackupRestore/xs/project-cache/AzureTableBackupRestore-Debug.json
+.DS_Store
