@@ -51,8 +51,19 @@ namespace TheByteStuff.AzureTableBackupRestore
                         }
                         else
                         {
-                            //if command line argument parameter does not split into 2, just add it to the list
-                            Arguments.Add(Arg, Arg);
+                            if (Param[0].Equals("AzureStorageConfigConnection") ||
+                                    Param[0].Equals("AzureBlobStorageConfigConnection") ||
+                                        Param[0].Equals("AzureStorageDestinationConfigConnection")){
+
+                                var key = Param[0];
+                                var value = Arg.Replace($"{Param[0]}=", "");
+
+                                Arguments.Add(key, value);
+                            }
+                            else{
+                                //if command line argument parameter does not split into 2, just add it to the list
+                                Arguments.Add(Arg, Arg);
+                            }
                         }
                     }
                     catch (ArgumentException aex)
