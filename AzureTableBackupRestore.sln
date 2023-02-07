@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureTableBackupRestore", "AzureTableBackupRestore.csproj", "{04152D49-39F5-47B4-AF26-C23E6262663A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTableUtilities", "..\AzureTableUtilities\AzureTableUtilities\AzureTableUtilities.csproj", "{ABE16555-C5CF-4A6F-9339-A8F6413889C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{04152D49-39F5-47B4-AF26-C23E6262663A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04152D49-39F5-47B4-AF26-C23E6262663A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04152D49-39F5-47B4-AF26-C23E6262663A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABE16555-C5CF-4A6F-9339-A8F6413889C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE16555-C5CF-4A6F-9339-A8F6413889C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE16555-C5CF-4A6F-9339-A8F6413889C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE16555-C5CF-4A6F-9339-A8F6413889C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

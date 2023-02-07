@@ -35,13 +35,61 @@ for help, aztbu -h</Description>
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="6.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
     <PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
-    <PackageReference Include="TheByteStuff.AzureTableUtilities" Version="4.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="AzureTableUtilities\LICENSE" />
+    <None Remove="AzureTableUtilities\README.md" />
+    <None Remove="AzureTableUtilities\AzureTableUtilities\obj\Debug\netstandard2.0\AzureTableUtilities.AssemblyInfoInputs.cache" />
+    <None Remove="AzureTableUtilities\AzureTableUtilities\obj\Debug\netstandard2.0\AzureTableUtilities.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Remove="AzureTableUtilities\AzureTableUtilities\CardFront_Clip.ico" />
+    <None Remove="AzureTableUtilities\AzureTableUtilities\AzureTableUtilities.xml" />
+    <None Remove="AzureTableUtilities\AzureTableUtilities\AzureTableUtilities.nuspec" />
+    <None Remove="AzureTableUtilities\AzureTableUtilities\CardFront_Clip.png" />
+    <None Remove="AzureTableUtilities\.gitignore" />
+    <None Remove="AzureTableUtilities\.gitattributes" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\TestFiles\appsettings.json" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\TestFiles\SystemLogs_ForXUnit.txt" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\TestFiles\SystemLogs_LargeFile_ForXUnit.txt" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\TestFiles\UserProfile_Backup_GoodFooter.txt" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\TestFiles\UserProfile_Backup_BadFooter.txt" />
+    <None Remove="AzureTableUtilities\.DS_Store" />
+    <None Remove="AzureTableUtilities\src\.DS_Store" />
+  </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\obj\Debug\netstandard2.0\.NETStandard,Version=v2.0.AssemblyAttributes.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\obj\Debug\netstandard2.0\AzureTableUtilities.AssemblyInfo.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\RestoreAzureTables.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\DynamicTableEntityJsonConverter.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\Exceptions\DeleteFailedException.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\Exceptions\BackupFailedException.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\Exceptions\CopyFailedException.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\Exceptions\AzureTableUtilitiesException.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\Exceptions\AzureTableBackupException.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\Exceptions\ParameterSpecException.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\Exceptions\AgingException.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\Exceptions\RestoreFailedException.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\Exceptions\ConnectionException.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\DynamicTableEntityJsonSerializer.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\CopyAzureTables.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\BackupAzureTables.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\TableSpec.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\Helper.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\DeleteAzureTables.cs" />
+    <Compile Remove="AzureTableUtilities\AzureTableUtilities\Filter.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\AzureTableUtilitiesCopyXUnitTest.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\AzureTableUtilitiesFiltersBaseXUnitTest.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\AzureTableUtilitiesXUnitTest.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\AzureTableUtilitiesBackupXUnitTest.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\AzureTableUtilitiesDeleteXUnitTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AzureTableUtilities\AzureTableUtilities\AzureTableUtilities.csproj" />
+  </ItemGroup>
 </Project>

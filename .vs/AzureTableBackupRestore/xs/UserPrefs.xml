@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{04152D49-39F5-47B4-AF26-C23E6262663A}|Default">
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>AzureTableUtilities/AzureTableUtilities/AzureTableUtilities.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.AzureTableBackupRestore PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../AzureTableUtilities/AzureTableUtilities/BackupAzureTables.cs">
+    <Files>
+      <File FileName="appsettings.json" Line="39" Column="2" />
+      <File FileName="CommandLineTool.cs" Line="413" Column="1" />
+      <File FileName="../AzureTableUtilities/AzureTableUtilities/BackupAzureTables.cs" Line="17" Column="36" />
+      <File FileName="../AzureTableUtilities/AzureTableUtilities/RestoreAzureTables.cs" Line="696" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AzureTableBackupRestore" expanded="True">
+            <Node name="AzureTableBackupRestore" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="AzureTableUtilities" expanded="True">
+              <Node name="BackupAzureTables.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

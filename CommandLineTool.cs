@@ -29,10 +29,13 @@ namespace TheByteStuff.AzureTableBackupRestore
         private readonly static string OriginalTableNameParmName = "OriginalTableName";
         private readonly static string TableNameToDeleteParmName = "TableNameToDelete";
         private readonly static string BlobRootParmName = "BlobRoot";
+        private readonly static string BlobRootSubFolderParmName = "BlobRootSubFolder";
         private readonly static string BlobFileNameParmName = "BlobFileName";
         private readonly static string WorkingDirectoryParmName = "WorkingDirectory";
         private readonly static string OutFileDirectoryParmName = "OutFileDirectory";
         private readonly static string RestoreFileNamePathParmName = "RestoreFileNamePath";
+        private readonly static string TablesToEscludeParmName = "BlobTablesToEsclude";
+
 
         private readonly static string HelpParmName = "help";
         private readonly static string HelpParmName2 = "-h";
@@ -212,6 +215,7 @@ namespace TheByteStuff.AzureTableBackupRestore
                         return me.RestoreTableFromBlobDirect(GetFromParmOrFile(config, DestinationTableNameParmName),
                             GetFromParmOrFile(config, OriginalTableNameParmName),
                             GetFromParmOrFile(config, BlobRootParmName),
+                            GetFromParmOrFile(config, BlobRootSubFolderParmName),
                             GetFromParmOrFile(config, BlobFileNameParmName),
                             GetIntFromParmOrFile(config, TimeoutSecondsParmName));
                     }
@@ -222,6 +226,14 @@ namespace TheByteStuff.AzureTableBackupRestore
                             GetFromParmOrFile(config, BlobRootParmName),
                             GetFromParmOrFile(config, WorkingDirectoryParmName),
                             GetFromParmOrFile(config, BlobFileNameParmName),
+                            GetIntFromParmOrFile(config, TimeoutSecondsParmName));
+                    }
+
+                    else if (Target.Contains("all"))
+                    {
+                        return me.RestoreAllTablesFromBlob(GetFromParmOrFile(config, BlobRootParmName),
+                            GetFromParmOrFile(config, BlobRootSubFolderParmName),
+                            GetFromParmOrFile(config, TablesToEscludeParmName),
                             GetIntFromParmOrFile(config, TimeoutSecondsParmName));
                     }
                     else
@@ -270,6 +282,7 @@ namespace TheByteStuff.AzureTableBackupRestore
                     {
                         return me.BackupTableToBlobDirect(GetFromParmOrFile(config, TableNameParmName),
                             GetFromParmOrFile(config, BlobRootParmName),
+                            GetFromParmOrFile(config, BlobRootSubFolderParmName),
                             GetBoolFromParmOrFile(config, CompressParmName),
                             GetIntFromParmOrFile(config, RetentionDaysParmName),
                             GetIntFromParmOrFile(config, TimeoutSecondsParmName),
@@ -289,6 +302,8 @@ namespace TheByteStuff.AzureTableBackupRestore
                     else if (Target.Contains("all"))
                     {
                         return me.BackupAllTablesToBlob(GetFromParmOrFile(config, BlobRootParmName),
+                            GetFromParmOrFile(config, BlobRootSubFolderParmName),
+                            GetFromParmOrFile(config, TablesToEscludeParmName),
                             GetBoolFromParmOrFile(config, CompressParmName),
                             GetIntFromParmOrFile(config, RetentionDaysParmName),
                             GetIntFromParmOrFile(config, TimeoutSecondsParmName),
@@ -369,7 +384,7 @@ namespace TheByteStuff.AzureTableBackupRestore
                     {
                         return me.DeleteAzureTableRows(GetFromParmOrFile(config, TableNameToDeleteParmName)
                          , GetIntFromParmOrFile(config, TimeoutSecondsParmName)
-                         ,filters
+                         , filters
                          );
                     }
                     else if (Target.Contains("table"))
