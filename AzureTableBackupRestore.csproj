@@ -55,6 +55,19 @@ for help, aztbu -h</Description>
     <None Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\TestFiles\UserProfile_Backup_BadFooter.txt" />
     <None Remove="AzureTableUtilities\.DS_Store" />
     <None Remove="AzureTableUtilities\src\.DS_Store" />
+    <None Remove="AzureTableUtilities\.git" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilities\AzureTableUtilities.xml" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilities\AzureTableUtilities.nuspec" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilities\CardFront_Clip.ico" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilities\CardFront_Clip.png" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilities\obj\AzureTableUtilities.csproj.nuget.g.props" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilities\obj\AzureTableUtilities.csproj.nuget.g.targets" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilities\obj\project.assets.json" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilities\obj\project.nuget.cache" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilities\obj\AzureTableUtilities.csproj.nuget.dgspec.json" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilities\obj\Debug\netstandard2.0\AzureTableUtilities.assets.cache" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilities\obj\Debug\netstandard2.0\AzureTableUtilities.csproj.FileListAbsolute.txt" />
+    <None Remove="AzureTableUtilities\src\AzureTableUtilities\D:\github\TheByteStuff\AzureTableUtilities\src\AzureTableUtilities\AzureTableUtilities.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.json">
@@ -88,8 +101,27 @@ for help, aztbu -h</Description>
     <Compile Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\AzureTableUtilitiesXUnitTest.cs" />
     <Compile Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\AzureTableUtilitiesBackupXUnitTest.cs" />
     <Compile Remove="AzureTableUtilities\src\AzureTableUtilitiesXUnitTest\AzureTableUtilitiesDeleteXUnitTest.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\BackupAzureTables.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\RestoreAzureTables.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\DynamicTableEntityJsonConverter.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\DynamicTableEntityJsonSerializer.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\CopyAzureTables.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\TableSpec.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\Helper.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\DeleteAzureTables.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\Filter.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\Exceptions\DeleteFailedException.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\Exceptions\BackupFailedException.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\Exceptions\CopyFailedException.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\Exceptions\AzureTableUtilitiesException.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\Exceptions\AzureTableBackupException.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\Exceptions\ParameterSpecException.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\Exceptions\AgingException.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\Exceptions\RestoreFailedException.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\Exceptions\ConnectionException.cs" />
+    <Compile Remove="AzureTableUtilities\src\AzureTableUtilities\obj\Debug\netstandard2.0\.NETStandard,Version=v2.0.AssemblyAttributes.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AzureTableUtilities\AzureTableUtilities\AzureTableUtilities.csproj" />
+    <ProjectReference Include="AzureTableUtilities\src\AzureTableUtilities\AzureTableUtilities.csproj" />
   </ItemGroup>
 </Project>

@@ -15,3 +15,6 @@ obj/
 /.vs/AzureTableBackupRestore/v17
 .vs/AzureTableBackupRestore/xs/project-cache/AzureTableBackupRestore-Debug.json
 .DS_Store
+.vs/AzureTableBackupRestore/xs/UserPrefs.xml
+.vs/AzureTableBackupRestore/xs/project-cache/AzureTableUtilities-Debug.json
+.vs/

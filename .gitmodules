@@ -1,0 +1,3 @@
+[submodule "AzureTableUtilities"]
+	path = AzureTableUtilities
+	url = https://github.com/simonebittidev/AzureTableUtilities.git

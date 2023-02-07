@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureTableBackupRestore", "AzureTableBackupRestore.csproj", "{04152D49-39F5-47B4-AF26-C23E6262663A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTableUtilities", "..\AzureTableUtilities\AzureTableUtilities\AzureTableUtilities.csproj", "{ABE16555-C5CF-4A6F-9339-A8F6413889C3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureTableUtilities", "AzureTableUtilities\src\AzureTableUtilities\AzureTableUtilities.csproj", "{ABE16555-C5CF-4A6F-9339-A8F6413889C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
