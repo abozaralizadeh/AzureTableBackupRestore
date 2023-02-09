@@ -7,6 +7,10 @@ RUN mkdir data
 COPY *.csproj AzureTableBackupRestore/
 COPY *.cs AzureTableBackupRestore/
 COPY *.json AzureTableBackupRestore/
+COPY AzureTableUtilities/src/AzureTableUtilities/*.csproj AzureTableBackupRestore/AzureTableUtilities/src/AzureTableUtilities/
+COPY AzureTableUtilities/src/AzureTableUtilities/*.cs AzureTableBackupRestore/AzureTableUtilities/src/AzureTableUtilities/
+COPY AzureTableUtilities/src/AzureTableUtilities/*.json AzureTableBackupRestore/AzureTableUtilities/src/AzureTableUtilities/
+COPY AzureTableUtilities/src/AzureTableUtilities/Exceptions/*.cs AzureTableBackupRestore/AzureTableUtilities/src/AzureTableUtilities/Exceptions/
 
 RUN dotnet publish AzureTableBackupRestore -c Release -o /app/AzureTableBackupRestore/out
 
