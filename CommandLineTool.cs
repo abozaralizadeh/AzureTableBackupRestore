@@ -174,7 +174,7 @@ namespace TheByteStuff.AzureTableBackupRestore
             {
                 instance.DisplayHelp();
                 instance.WriteOutput(" ");
-                instance.WriteOutput(String.Format("Exception: {0}, {1}", ex.Message, ex.StackTrace));
+                instance.WriteOutput(String.Format("Exception: {0}, ExecptionStackTrace: {1}, InnerException: {2}, InnerExceptionStackTrace:{3}", ex.Message, ex.StackTrace, ex.InnerException?.Message ?? "", ex.InnerException?.StackTrace ?? ""));
             }
         }
 
